@@ -5,9 +5,9 @@
  <session-factory name="">
   <property name="hbm2ddl.auto">update</property>
   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-  <property name="hibernate.connection.password">admin123</property>
-  <property name="hibernate.connection.url">hsinstance.clcn2ooxtuiy.us-east-2.rds.amazonaws.com</property>
-  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">***</property>
+  <property name="hibernate.connection.url">****</property>
+  <property name="hibernate.connection.username">***</property>
   <property name="hibernate.default_schema">rds</property>
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
   <property name="hibernate.connection.pool_size">10</property>
