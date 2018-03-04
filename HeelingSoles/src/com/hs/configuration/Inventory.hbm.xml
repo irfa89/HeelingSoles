@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 4, 2018 12:39:09 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.hs.model.Inventory" table="INVENTORY">
+        <id name="cust_id" type="int">
+            <column name="CUST_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="item_id" type="int">
+            <column name="ITEM_ID" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="GENDER" />
+        </property>
+        <property name="brand" type="java.lang.String">
+            <column name="BRAND" />
+        </property>
+        <property name="size" type="int">
+            <column name="SIZE" />
+        </property>
+        <property name="qty" type="int">
+            <column name="QTY" />
+        </property>
+        <property name="desc" type="java.lang.String">
+            <column name="DESC" />
+        </property>
+        <property name="condition" type="java.lang.String">
+            <column name="CONDITION" />
+        </property>
+    </class>
+</hibernate-mapping>

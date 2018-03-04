@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hbm2ddl.auto">update</property>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">admin123</property>
+  <property name="hibernate.connection.url">hsinstance.clcn2ooxtuiy.us-east-2.rds.amazonaws.com</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.default_schema">rds</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.connection.pool_size">10</property>
+  <property name="hibernate.show_sql">true</property>
+  
+  <mapping resource="com/hs/configuration/Donation.hbm.xml"/>
+  <mapping resource="com/hs/configuration/Dropoff_Location.hbm.xml"/>
+  <mapping resource="com/hs/configuration/Events.hbm.xml"/>
+  <mapping resource="com/hs/configuration/Inventory.hbm.xml"/>
+  <mapping resource="com/hs/configuration/Sign_Up.hbm.xml"/>
+  <mapping resource="com/hs/configuration/Volunteer.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

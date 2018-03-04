@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 4, 2018 12:42:44 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.hs.model.Dropoff_Location" table="DROPOFF_LOCATION">
+        <id name="loc_id" type="int">
+            <column name="LOC_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="addrs_1" type="java.lang.String">
+            <column name="ADDRS_L1" />
+        </property>
+        <property name="addrs_2" type="java.lang.String">
+            <column name="ADDRS_L2" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="zipcode" type="int">
+            <column name="ZIPCODE" />
+        </property>
+        <property name="country" type="java.lang.String">
+            <column name="COUNTRY" />
+        </property>
+        <property name="contact" type="int">
+            <column name="CONTACT" />
+        </property>
+        <property name="days" type="java.lang.String">
+            <column name="DAYS" />
+        </property>
+        <property name="timing" type="java.lang.String">
+            <column name="TIMING" />
+        </property>
+    </class>
+</hibernate-mapping>
